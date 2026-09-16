@@ -7,24 +7,26 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="noindex,nofollow" name="robots"/>
-<meta content="タレント起用に向く広告課題と、情報・根拠を優先したい場面の違いを解説。人物選定、費用・契約、広告成果につなげる設計まで整理します。" name="description"/>
+<meta content="タレント起用で広告に何が起きるのか、効果が立ち上がる条件、人選のしかた、相談から撮影までの進め方、費用と契約、成果につなげる設計までを整理します。" name="description"/>
 <meta content="#1555ed" name="theme-color"/>
 <title>タレント起用の効果とは？広告で成果につなげる選び方と注意点 | e-Spirit BLOG</title>
 <link href="https://www.e-spirit.jp/blog/talent-casting/" rel="canonical"/>
+<link as="font" crossorigin="" href="/fonts/zkgn-400.woff2" rel="preload" type="font/woff2"/>
+<link as="font" crossorigin="" href="/fonts/zkgn-700.woff2" rel="preload" type="font/woff2"/>
 <meta content="article" property="og:type"/>
 <meta content="https://www.e-spirit.jp/blog/talent-casting/" property="og:url"/>
 <meta content="タレント起用の効果とは？広告で成果につなげる選び方と注意点" property="og:title"/>
-<meta content="タレント起用に向く広告課題と、情報・根拠を優先したい場面の違いを解説。人物選定、費用・契約、広告成果につなげる設計まで整理します。" property="og:description"/>
-<meta content="https://www.e-spirit.jp/blog/talent-casting/images/hero-casting-1240.webp" property="og:image"/>
+<meta content="タレント起用で広告に何が起きるのか、効果が立ち上がる条件、人選のしかた、相談から撮影までの進め方、費用と契約、成果につなげる設計までを整理します。" property="og:description"/>
+<meta content="https://www.e-spirit.jp/blog/talent-casting/images/hero-casting.png" property="og:image"/>
 <meta content="1672" property="og:image:width"/>
 <meta content="941" property="og:image:height"/>
 <meta content="ja_JP" property="og:locale"/>
 <meta content="e-Spirit BLOG" property="og:site_name"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="タレント起用の効果とは？広告で成果につなげる選び方と注意点" name="twitter:title"/>
-<meta content="タレント起用に向く広告課題と、情報・根拠を優先したい場面の違いを解説。人物選定、費用・契約、広告成果につなげる設計まで整理します。" name="twitter:description"/>
-<meta content="https://www.e-spirit.jp/blog/talent-casting/images/hero-casting-1240.webp" name="twitter:image"/>
-<link as="image" href="/images/hero-casting-820.webp" imagesizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" imagesrcset="/images/hero-casting-480.webp 480w, /images/hero-casting-820.webp 820w, /images/hero-casting-1240.webp 1240w" rel="preload"/>
+<meta content="タレント起用で広告に何が起きるのか、効果が立ち上がる条件、人選のしかた、相談から撮影までの進め方、費用と契約、成果につなげる設計までを整理します。" name="twitter:description"/>
+<meta content="https://www.e-spirit.jp/blog/talent-casting/images/hero-casting.png" name="twitter:image"/>
+<link as="image" href="/images/hero-casting.png" rel="preload"/>
 <!--
   改訂版 2026-09-16 / 原本: article-demo-v2（index_revised(3).html）
   品質機構の「型」と docs/writing-guidelines.md に沿って改訂（画像最適化・構造化データ・FAQ・スマホ導線）。
@@ -33,11 +35,15 @@
   -->
 <style>
 :root{
-  /* Directional palette, not sampled official brand tokens. */
-  --blue:#0867c9;--blue-deep:#034f9e;--blue-light:#eef6ff;
-  --ink:#11151a;--body:#333b45;--muted:#68717e;--line:#e2e6ec;
-  --paper:#fff;--wash:#f7f8fb;--radius:12px;--header:84px;
-  --font:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  /* 公式サイト（e-spirit.jp）のデザイントークンから取得（2026-09-16確認）
+     primary-coloer=rgb(0,65,160) / secondary-color=#14235A / tertiary-color=#55BEF0
+     text-color=#262626 / bese-cokor=#F2F2F2 / bodder-color=#EEEFF5
+     gradient-color=linear-gradient(135deg,#55BEF0,#2878FA 49%,#003CA0) */
+  --blue:#0041a0;--blue-deep:#14235a;--blue-bright:#2878fa;--blue-light:#eef2fa;
+  --accent:#55bef0;--brand-gradient:linear-gradient(135deg,#55bef0,#2878fa 49%,#003ca0);
+  --ink:#262626;--body:#3a3a3a;--muted:#6b6b6b;--line:#eeeff5;
+  --paper:#fff;--wash:#f2f2f2;--radius:12px;--header:84px;
+  --font:"Zen Kaku Gothic New",-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:110px}
@@ -66,7 +72,7 @@ img{max-width:100%}
 .sources-count{color:var(--blue);background:var(--blue-light);padding:0 5px;font-size:10px;line-height:20px;border-radius:3px}
 .header-contact{padding:12px 18px;font-size:12px;font-weight:700;text-decoration:none;background:var(--blue);color:white;display:flex;gap:20px;align-items:center;border-radius:4px;white-space:nowrap}
 .header-contact:hover{background:var(--blue-deep)}
-.read-progress{height:2px;background:var(--blue);width:0;position:absolute;bottom:-1px;left:0;transition:width .08s linear}
+.read-progress{height:3px;background:var(--brand-gradient);width:0;position:absolute;bottom:-1px;left:0;transition:width .08s linear}
 .page-wrap{max-width:1240px;padding:0 40px;margin:0 auto}
 .breadcrumb{display:flex;align-items:center;gap:10px;font-size:11px;color:var(--muted);padding:25px 0 30px;flex-wrap:wrap}
 .breadcrumb a{text-decoration:none}
@@ -93,6 +99,10 @@ h1{font-size:clamp(30px,2.9vw,40px);line-height:1.55;letter-spacing:.005em;margi
 .production-caption{font-size:10px;color:#8993a3;line-height:1.5;margin-top:7px;letter-spacing:.015em}
 .production-caption code{font-family:ui-monospace,monospace;font-size:10px;overflow-wrap:anywhere}
 .credit-grid-single{grid-template-columns:1fr!important}
+.author-media{width:64px;height:64px;min-width:64px;border-radius:50%;background:#e8eefb;display:flex;align-items:center;justify-content:center;color:#7d93b8;flex-shrink:0}
+.author-media svg{width:32px;height:32px}
+@media(max-width:600px){.author-media{width:50px;height:50px;min-width:50px}.author-media svg{width:26px;height:26px}}
+.credit-label.author{color:var(--blue-deep)}
 .credit-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:12px}
 .credit-card{display:flex;gap:13px;padding:17px;background:var(--wash);align-items:flex-start;border-radius:6px;border:1px solid #edf0f5;min-width:0}
 .person-media{width:64px;height:64px;min-width:64px;border-radius:50%;aspect-ratio:1}
@@ -166,7 +176,7 @@ h1{font-size:clamp(30px,2.9vw,40px);line-height:1.55;letter-spacing:.005em;margi
 .text-link{font-size:13px;font-weight:700;line-height:1.8;color:var(--blue);text-decoration:none;border-bottom:1px solid #b7cbfd;padding-bottom:4px}
 .text-link:hover{color:var(--blue-deep)}
 .text-link.light{color:white;border-color:#749afa}
-.closing-cta{margin:44px 0 40px;padding:38px 37px 26px;background:var(--blue);color:white;border-radius:8px;position:relative;overflow:hidden}
+.closing-cta{margin:44px 0 40px;padding:38px 37px 26px;background:linear-gradient(135deg,#003ca0,#14235a);color:white;border-radius:8px;position:relative;overflow:hidden}
 .closing-cta .mini-label{color:#d5e1ff}
 .article .closing-cta h2{font-size:36px;line-height:1.55;letter-spacing:.02em;font-weight:750;margin:0 0 19px;color:white}
 .article .closing-cta p{font-size:14px;line-height:2;color:#edf2ff;margin-bottom:24px;max-width:650px}
@@ -423,6 +433,11 @@ figure.has-image .production-caption{display:none}
 .inline-cta .button{font-size:14px}
 .side-cta .button{font-size:13px}
 @media print{.mobile-contact,.voice{display:none!important}}
+/* 公式サイトと同じ書体（Zen Kaku Gothic New）。Google Fonts の配信は 112リクエスト/1,440KB になるため、
+   記事の使用文字だけにサブセット化して自社ホスト（3ファイル／251KB）。 */
+@font-face{font-family:'Zen Kaku Gothic New';font-style:normal;font-weight:400;font-display:swap;src:url('/fonts/zkgn-400.woff2') format('woff2')}
+@font-face{font-family:'Zen Kaku Gothic New';font-style:normal;font-weight:500 600;font-display:swap;src:url('/fonts/zkgn-500.woff2') format('woff2')}
+@font-face{font-family:'Zen Kaku Gothic New';font-style:normal;font-weight:700 900;font-display:swap;src:url('/fonts/zkgn-700.woff2') format('woff2')}
 </style>
 </head>
 <body>
@@ -458,19 +473,30 @@ figure.has-image .production-caption{display:none}
 <header class="article-head">
 <div class="article-category">キャスティング・広告のヒント</div>
 <h1>タレント起用の効果とは？<br/>広告で成果につなげる<span class="keep-phrase">選び方と注意点</span></h1>
-<p class="article-deck">「有名な人」ではなく、「この広告に必要な人」を。<br/>キャスティングの現場で大切にしたい考え方を、分かりやすくお届けします。</p>
+<p class="article-deck">「有名な人」ではなく、「この広告に必要な人」を。<br/>キャスティングの現場から見た、広告に人が出るということ。</p>
 <div class="article-meta"><span class="status">CASTING / ADVERTISING</span><span>テーマ：タレント起用</span><time class="article-date" datetime="2026-09-16">2026年9月16日</time></div>
 <figure class="hero-figure">
 <div class="media-slot photo-media" style="--ratio:16/9">
 <div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 01</span><strong>人と人がつくる、広告のシーン</strong></div>
-<img alt="広告の企画や撮影に関わる人たちを表したイメージ" decoding="async" fetchpriority="high" height="941" loading="eager" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/hero-casting.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/hero-casting-820.webp" srcset="/images/hero-casting-480.webp 480w, /images/hero-casting-820.webp 820w, /images/hero-casting-1240.webp 1240w" width="1672"/>
+<img alt="広告の企画や撮影に関わる人たちを表したイメージ" decoding="async" fetchpriority="high" height="941" loading="eager" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='/images/hero-cast.png';}else if(this.dataset.fallback==='1'){this.dataset.fallback='2';this.src='/images/hero-casting.jpg';}else{this.hidden=true;}" onload="this.parentElement.classList.add('is-loaded')" src="/images/hero-casting.png" width="1672"/>
 </div>
 </figure>
-<div class="credit-grid credit-grid-single">
+<div class="credit-grid">
+<div class="credit-card">
+<div class="author-media"><svg aria-hidden="true" fill="none" viewbox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8" stroke="currentColor" stroke-width="1.7"></circle><path d="M4.5 20.5c0-4.1 3.4-7.5 7.5-7.5s7.5 3.4 7.5 7.5" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"></path></svg></div>
+<div class="credit-copy">
+<div class="credit-label author">投稿者 / AUTHOR</div>
+<p class="credit-name">イー・スピリット BLOG 編集部</p>
+<p class="credit-role">株式会社イー・スピリット</p>
+<details class="credit-details"><summary>プロフィールを見る</summary>
+<p>キャスティングの現場で聞いた話と、広告主・広告会社のご担当者からよくいただくご質問をもとに、記事をお届けしています。</p>
+<p class="photo-source">※ 顔写真・氏名は差し替え予定です</p></details>
+</div>
+</div>
 <div class="credit-card">
 <div class="media-slot person-media" style="--ratio:1">
 <div aria-hidden="true" class="media-fallback">監修者<br/>写真</div>
-<img alt="株式会社イー・スピリット代表取締役 足立茂樹氏の公開写真" decoding="async" height="240" loading="eager" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" onload="this.parentElement.classList.add('is-loaded')" src="/images/supervisor-adachi-240.webp" style="object-position:50% 42%;" width="240"/>
+<img alt="株式会社イー・スピリット代表取締役 足立茂樹氏の公開写真" decoding="async" height="240" loading="eager" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" onload="this.parentElement.classList.add('is-loaded')" src="/images/supervisor-adachi-240.webp" style="object-position:50% 42%;" width="240"/>
 </div>
 <div class="credit-copy">
 <div class="credit-label">監修者 / SUPERVISOR</div>
@@ -483,20 +509,22 @@ figure.has-image .production-caption{display:none}
 </div>
 </div></div>
 <!-- --><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Article","headline":"タレント起用の効果とは？広告で成果につなげる選び方と注意点","description":"タレント起用に向く広告課題と、情報・根拠を優先したい場面の違いを解説。人物選定、費用・契約、広告成果につなげる設計まで整理します。","image":["https://www.e-spirit.jp/blog/talent-casting/images/hero-casting-1240.webp"],"datePublished":"2026-09-16","dateModified":"2026-09-16","inLanguage":"ja","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.e-spirit.jp/blog/talent-casting/"},"author":{"@type":"Organization","name":"株式会社イー・スピリット","url":"https://www.e-spirit.jp/"},"reviewedBy":{"@type":"Person","name":"足立 茂樹","jobTitle":"株式会社イー・スピリット 代表取締役","url":"https://www.e-spirit.jp/about/member"}}
+{"@context":"https://schema.org","@type":"Article","headline":"タレント起用の効果とは？広告で成果につなげる選び方と注意点","description":"タレント起用で広告に何が起きるのか、効果が立ち上がる条件、人選のしかた、相談から撮影までの進め方、費用と契約、成果につなげる設計までを整理します。","image":["https://www.e-spirit.jp/blog/talent-casting/images/hero-casting.png"],"datePublished":"2026-09-16","dateModified":"2026-09-16","inLanguage":"ja","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.e-spirit.jp/blog/talent-casting/"},"author":{"@type":"Organization","name":"株式会社イー・スピリット","url":"https://www.e-spirit.jp/"},"reviewedBy":{"@type":"Person","name":"足立 茂樹","jobTitle":"株式会社イー・スピリット 代表取締役","url":"https://www.e-spirit.jp/about/member"}}
 </script>
 </header>
 <div class="intro">
-<p class="lead">タレント起用を考えると、まず「誰に出てもらうか」に目が向きがちです。ですが、私たちがキャスティングを考えるときは、その前に整理しておきたいことがあります。<span class="hl">その広告課題は、本当に「人の力」で解くべきものなのか</span>。まずはここを見極めることが大切です。</p>
-<p class="lead">著名人を起用した広告の研究を見ても、その効果は一様ではありません。人物とブランドの相性だけでなく、広告で何を解決したいのかによっては、タレント起用よりも別の手法が適している場合もあります。<button aria-label="出典・補足1を開く" class="fc-mark" data-comment="1">1</button></p>
-<p class="lead">この記事では、「タレントの力を活かしやすい広告」と「ほかの手段を優先したほうがよい広告」を、私たちなりの視点で整理します。そのうえで、人選や費用、契約、起用後の広告設計まで順番に見ていきます。</p>
+<p class="greeting">こんにちは！イー・スピリット BLOG 編集部です。</p>
+<p class="lead">広告に人が出ると、何かが変わります。</p>
+<p class="lead">同じ枠でも、視線が止まる。商品名ではなく、出演した人の名前で検索される。切り取られた一場面が、広告の枠を越えて回り始める。私たちがキャスティングの現場で見ているのは、こういう変化です！</p>
+<p class="lead">ただし、この変化は誰を起用しても同じように起きるわけではありません。起きる広告と、起きない広告があります。そしてその差は、「誰を選んだか」より前の段階で、すでに決まっています。</p>
+<p class="lead">この記事では、タレント起用で実際に何が起きるのか、それが立ち上がる条件は何か、人選のしかた、相談から撮影までの進め方、費用と契約、成果につなげる設計までを、順番に整理していきます。</p>
 </div>
 <aside aria-label="この記事でわかること" class="key-point learn-box">
 <span class="mini-label">この記事でわかること / WHAT YOU WILL LEARN</span>
 <ol>
-<li><strong>起用の可否は、人選の前に決まります。</strong>その広告課題を解くのに「人の力」が必要かを、候補者を探し始める前に確かめます。</li>
-<li><strong>認知とイメージ形成では、タレントは力を発揮します。</strong>一方、商品の違いの理解や客観的な信頼が目的なら、情報と根拠を優先します。</li>
-<li><strong>費用・契約・導線・KPIまで、起用前に設計します。</strong>ここまで揃うと、起用の理由も、成果の確認のしかたも説明できるようになります。</li>
+<li><strong>タレント起用で広告に起きることは、4つあります。</strong>見る理由ができる／人の名前で検索される／広告の枠を越えて広がる／人と商品がセットで記憶に残る。</li>
+<li><strong>ただし、立ち上がるかどうかは「何を変えたい広告か」で決まります。</strong>認知やイメージの形成ではタレントは力を発揮しますが、商品の違いの理解や客観的な信頼が目的なら、情報と根拠が優先されます。</li>
+<li><strong>人選は、候補者を探すことから始まりません。</strong>広告課題の整理から、契約、撮影後の展開と効果測定までを一貫して設計すると、起用の理由も成果も説明できるようになります。</li>
 </ol>
 <div class="learn-flow">考える順番：広告課題 → 必要な力 → 起用の要否 → 人選 → 契約 → 活用・効果測定</div>
 </aside>
@@ -512,31 +540,72 @@ figure.has-image .production-caption{display:none}
 </ol>
 </figure>
 <!-- --><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ItemList","name":"この記事でわかること","itemListElement":[{"@type":"ListItem","position":1,"name":"タレント起用の可否は、人選の前に「その広告課題を解くのに人の力が必要か」で決まります"},{"@type":"ListItem","position":2,"name":"認知やブランドイメージの形成ではタレントは力を発揮しますが、商品の違いの理解や客観的な信頼が目的なら情報と根拠が優先されます"},{"@type":"ListItem","position":3,"name":"費用・契約・広告を見た後の導線・KPIまで起用前に設計すると、起用の理由も成果の確認のしかたも説明できるようになります"}]}
+{"@context":"https://schema.org","@type":"ItemList","name":"この記事でわかること","itemListElement":[{"@type":"ListItem","position":1,"name":"タレント起用で広告に起きることは、見る理由ができる・人の名前で検索される・広告の枠を越えて広がる・人と商品がセットで記憶に残るの4つです"},{"@type":"ListItem","position":2,"name":"効果が立ち上がるかどうかは、その広告が何を変えたいのかで決まります。認知やイメージの形成ではタレントは力を発揮しますが、商品の違いの理解や客観的な信頼が目的なら情報と根拠が優先されます"},{"@type":"ListItem","position":3,"name":"人選は候補者を探すことから始まりません。広告課題の整理から、契約、撮影後の展開と効果測定までを一貫して設計します"}]}
 </script>
 <details class="toc" open="">
 <summary><div>この記事の目次<span>CONTENTS</span></div></summary>
-<ol><li><a href="#fit">タレント起用が向いているケース・向いていないケース</a></li>
-<li><a href="#before">タレントを選ぶ前に決める4つのこと</a></li>
-<li><a href="#choose">広告に起用するタレントの選び方</a></li>
-<li><a href="#cost">タレント起用の費用と契約で確認するポイント</a></li>
-<li><a href="#design">タレント起用を広告成果につなげる設計</a></li>
-<li><a href="#who">タレント起用は誰に依頼するべきか</a></li>
-<li><a href="#espirit">イー・スピリットのタレント起用支援</a></li>
+<ol><li><a href="#effect">タレント起用で、広告に何が起きるのか</a></li>
+<li><a href="#fit">効果が立ち上がる広告、別の手段が勝つ広告</a></li>
+<li><a href="#choose">人を選ぶ前に決めること、選ぶときに見ること</a></li>
+<li><a href="#process">相談から撮影まで、どう進むのか</a></li>
+<li><a href="#cost">費用と契約で確認するポイント</a></li>
+<li><a href="#design">タレントと商品を、一緒に記憶してもらう</a></li>
+<li><a href="#who">誰に依頼するか、どこまで任せるか</a></li>
 <li><a href="#summary">タレント起用は「人選」ではなく広告設計から始める</a></li>
 <li><a href="#faq-title">よくある質問</a></li></ol>
 </details>
-<section aria-labelledby="title-fit" class="chapter" id="fit">
-<div class="chapter-label"><span>01</span>CASTING BASICS</div>
-<h2 id="title-fit">タレント起用が向いているケース・向いていないケース</h2>
+<section aria-labelledby="title-effect" class="chapter" id="effect">
+<div class="chapter-label"><span>01</span>WHAT HAPPENS</div>
+<h2 id="title-effect">タレント起用で、広告に何が起きるのか</h2>
 <figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
-<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 02</span><strong>起用の向き・不向き</strong></div>
-<img alt="広告課題について話し合う人たちのイメージ" decoding="async" height="941" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/fit-cases.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/fit-cases-820.webp" srcset="/images/fit-cases-480.webp 480w, /images/fit-cases-820.webp 820w, /images/fit-cases-1240.webp 1240w" width="1672"/>
+<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 02</span><strong>撮影の現場で起きること</strong></div>
+<img alt="出演者と制作スタッフが撮影に取り組むイメージ" decoding="async" height="941" loading="lazy" onerror="this.hidden=true" onload="this.parentElement.classList.add('is-loaded')" src="/images/ad-design-flow.png" width="1672"/>
 </div></figure>
-<p>タレント起用を検討するときは、つい「誰が人気か」「誰なら話題になるか」に目が向きがちです。ですが、まず考えたいのは、今の広告課題を解くうえでタレントの力が本当に役立つのかということです。認知を広げたい、ブランドの印象をつくりたいといった課題にはタレントの力を活かしやすい一方、商品の違いを伝えたい、客観的な根拠で信頼を得たいといった課題では、別の手段を優先したほうがよい場合もあります。</p>
-<h3>タレント起用が向いているケース</h3>
-<p>タレントが持つ注目度やイメージ、ファンとのつながりを広告に活かせる場合、タレント起用は大きな力を発揮します。認知を広げたい、ブランドの印象をつくりたい、これまで接点のなかった層に届けたい。そんな場面では、その人の存在そのものが、広告に目を向けてもらうきっかけになります。</p>
-<div aria-label="比較表・横スクロール可能" class="table-scroll" role="region" tabindex="0"><table class="article-table">
+<p>「タレント起用の効果」と一口に言っても、実際に現場で起きていることは一つではありません。私たちがキャスティングの仕事の中で見ている変化を、4つに分けてご紹介します！</p>
+<h3>見てもらう理由が、一瞬でできる</h3>
+<p>広告枠の中は、常に「見てもらうための競争」です。読まれずに流れていく広告が大多数の中で、知っている人の顔が映ると、視線がそこで止まります。</p>
+<p>タレントの力がいちばん分かりやすい形で出るのが、この瞬間です。<strong>内容を伝える前に、「見る理由」をつくれる</strong>。止まった数秒の間に、伝えたいことを入れる。これがタレント起用の、いちばん基本的な働きです！</p>
+<h3>商品名ではなく、人の名前で検索される</h3>
+<p>広告を見た人が次に取る行動は、多くの場合「検索」です。</p>
+<p>商品名で検索する人もいれば、出演した人の名前で検索する人もいます。<strong>「〇〇 CM」という検索が生まれると、出稿した枠の外にも接点が生まれます。</strong> 指名検索は、認知が動いたことを示す、いちばん分かりやすい指標のひとつです！</p>
+<h3>広告の枠を越えて、広がる</h3>
+<p>CMが切り取られ、SNSで回る。出演者自身が発信する。PRやニュースの話題になる。イベントや店頭にも展開する。</p>
+<p>タレントを起用した広告は、1本で完結しません。<strong>広告以外の複数の接点の、起点になります。</strong> ここが、出稿して終わりの広告との大きな違いです！調査でも、著名人の起用は広告単体ではなく、その周辺の話題や接触の総量として効果に効くことが示されています。</p>
+<h3>人と商品が、セットで記憶に残る</h3>
+<p>そして、いちばん難しいのがここです。</p>
+<p>「出演していた人は覚えている。でも、何の広告だったか思い出せない」。タレント広告で最も避けたい状態です。Erfgenら（2015）は<strong>計4,970人</strong>を対象とした複数の実験で、著名人に注意が集まることでブランド想起が弱まる「Vampire Effect」を検討しています。<button aria-label="出典・補足6を開く" class="fc-mark" data-comment="6">6</button></p>
+<p>人が記憶に残るのは、起用すれば自動的にそうなるからではありません。<strong>人と商品の結び付きを設計したときにはじめて、「セットで残る」ようになります。</strong> その設計のしかたは、06で詳しく扱っていきます。</p>
+<div aria-label="比較表" class="table-scroll" role="region" tabindex="0"><table class="article-table">
+<thead><tr><th scope="col">広告に起きること</th><th scope="col">動く指標の例</th><th scope="col">効きやすい広告課題</th></tr></thead>
+<tbody>
+<tr><td data-label="広告に起きること">見てもらう理由ができる</td><td data-label="動く指標の例">広告認知、リーチ、再生完了率</td><td data-label="効きやすい広告課題">商品・ブランドの認知が低い</td></tr>
+<tr><td data-label="広告に起きること">人の名前で検索される</td><td data-label="動く指標の例">指名検索、検索からの流入</td><td data-label="効きやすい広告課題">新しい顧客層へ広げたい</td></tr>
+<tr><td data-label="広告に起きること">広告の枠を越えて広がる</td><td data-label="動く指標の例">SNS投稿、話題量、来訪数</td><td data-label="効きやすい広告課題">広告以外にも話題を広げたい</td></tr>
+<tr><td data-label="広告に起きること">人と商品がセットで残る</td><td data-label="動く指標の例">ブランド想起、好意度、イメージ調査</td><td data-label="効きやすい広告課題">ブランドの印象を作りたい・変えたい</td></tr>
+</tbody>
+</table></div>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>現場でいちばん手応えがあるのは、3つ目の「枠を越えて広がる」ところです。1本のCMが、PRになり、SNSになり、店頭の話題になる。起用する人を選ぶとき、私たちは、この広がり方まで想像しながら候補を並べています！</p></div></aside>
+</section>
+<aside aria-label="タレント起用の効果について相談" class="inline-cta">
+<div>
+<span class="mini-label">CASTING CONSULTATION</span>
+<div class="cta-heading">この広告で、何を変えたいのか。</div>
+<p>認知を広げたいのか、商品の違いを伝えたいのか。広告課題によって、タレント起用が有効な場面は変わります。まだ起用するかどうか決めていない段階でも、課題の整理からご相談いただけます。</p>
+</div>
+<a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">広告課題から相談する<span aria-hidden="true">↗</span></a>
+</aside>
+<section aria-labelledby="title-fit" class="chapter" id="fit">
+<div class="chapter-label"><span>02</span>WHERE IT WORKS</div>
+<h2 id="title-fit">効果が立ち上がる広告、別の手段が勝つ広告</h2>
+<figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
+<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 03</span><strong>起用の向き・不向き</strong></div>
+<img alt="広告課題について話し合う人たちのイメージ" decoding="async" height="941" loading="lazy" onerror="this.hidden=true" onload="this.parentElement.classList.add('is-loaded')" src="/images/fit-cases.png" width="1672"/>
+</div></figure>
+<p>01でご紹介した変化は、どんな広告でも起きるわけではありません。同じタレントを起用しても、広告の目的によって、効果は出ることもあれば出ないこともあります。ここは正直にお伝えしておきます。</p>
+<p>分かれ目は、その広告が<strong>「何を変えたいのか」</strong>です。認知を広げたい、ブランドの印象をつくりたいといった課題にはタレントの力を活かしやすい一方、商品の違いを伝えたい、客観的な根拠で信頼を得たいといった課題では、別の手段を優先したほうがよい場合もあります。</p>
+<h3>タレントの力が活きる広告</h3>
+<p>タレントが持つ注目度やイメージ、ファンとのつながりを広告に活かせる場合、01で見た4つの変化は立ち上がりやすくなります。これまで接点のなかった層に届けたい。そんな場面では、その人の存在そのものが、広告に目を向けてもらうきっかけになります。</p>
+<div aria-label="比較表" class="table-scroll" role="region" tabindex="0"><table class="article-table">
 <thead><tr><th scope="col">広告課題</th><th scope="col">タレントに期待する役割</th><th scope="col">見るべき指標の例</th></tr></thead>
 <tbody>
 <tr><td data-label="広告課題">商品・ブランドの認知が低い</td><td data-label="タレントに期待する役割">広告に目を向けてもらうきっかけを作る</td><td data-label="見るべき指標の例">広告認知、リーチ、指名検索</td></tr>
@@ -544,42 +613,43 @@ figure.has-image .production-caption{display:none}
 <tr><td data-label="広告課題">新しい顧客層へ広げたい</td><td data-label="タレントに期待する役割">ファンや支持層との接点を作る</td><td data-label="見るべき指標の例">SNS反応、サイト流入、新規接触数</td></tr>
 <tr><td data-label="広告課題">広告以外にも話題を広げたい</td><td data-label="タレントに期待する役割">PR、SNS、イベントなど複数接点の起点になる</td><td data-label="見るべき指標の例">話題量、SNS投稿、指名検索、来訪数</td></tr>
 </tbody>
-</table></div><p class="scroll-hint">表は横にスクロールしてご覧いただけます。</p>
-<h3>タレント起用が向いていないケース</h3>
+</table></div>
+<h3>ほかの手段を優先したほうがよい広告</h3>
 <p>一方で、<strong>タレント起用が最適とは限らない広告課題もあります。</strong> たとえば、商品の違いをきちんと理解してもらうことや、広告の主張を客観的な根拠で納得してもらうことが重要な場面です。こうしたケースでは、タレントを起用するかどうかも含めて、課題に合った伝え方を選ぶ必要があります。</p>
-<div aria-label="比較表・横スクロール可能" class="table-scroll" role="region" tabindex="0"><table class="article-table">
+<div aria-label="比較表" class="table-scroll" role="region" tabindex="0"><table class="article-table">
 <thead><tr><th scope="col">広告課題</th><th scope="col">優先したい手段</th><th scope="col">理由</th></tr></thead>
 <tbody>
 <tr><td data-label="広告課題">商品の違い・性能を理解してもらいたい</td><td data-label="優先したい手段">比較、実演、具体的な根拠、専門家による説明</td><td data-label="理由">「なぜ優れているのか」を理解できる情報のほうが、判断材料になりやすい</td></tr>
 <tr><td data-label="広告課題">広告の主張を信用してもらいたい</td><td data-label="優先したい手段">第三者評価、認証、受賞、実績データ、専門家</td><td data-label="理由">好感度よりも、広告の主張を裏付ける客観的な根拠が重要になる</td></tr>
 <tr><td data-label="広告課題">購入前の不安・リスクを下げたい</td><td data-label="優先したい手段">専門的な説明、利用条件、保証、実績、利用者の具体例</td><td data-label="理由">「有名な人が使っている」という情報だけでは、具体的な不安を解消しにくい</td></tr>
 </tbody>
-</table></div><p class="scroll-hint">表は横にスクロールしてご覧いただけます。</p>
+</table></div>
 <div class="research-note fc-target" id="fact-1">
 <span class="mini-label">RESEARCH NOTE</span>
 <p><strong>著名人起用に関する46件の研究（計10,357人）</strong>をまとめた分析では、タレントを起用したからといって、広告効果が一律に高まるわけではないことが示されています。効果は、商品・ブランドとの相性や広告の目的、ほかにどんな伝え方をするかによって変わります。実際に、品質認証や受賞歴などの客観的な裏付けのほうが、ブランドへの評価を高めたケースもありました。<button aria-label="出典・補足1を開く" class="fc-mark" data-comment="1">1</button></p>
 <p class="research-small">さまざまな条件をまとめた結果であり、「タレント広告は効かない」という意味ではありません。</p>
 </div>
 <p class="fc-target" id="fact-6">また、Pettyら（1983）の実験では、商品への関与が高い条件ほど、「誰が出演しているか」という手掛かりよりも、<strong>広告メッセージの論拠の強さ</strong>が態度形成に大きく影響しました。比較や理解、納得を促す広告では、「誰が言うか」以上に「何を、どう伝えるか」を重視したほうがよい場合があります。<button aria-label="出典・補足5を開く" class="fc-mark" data-comment="5">5</button></p>
-<p>もちろん、タレント本人にその分野の専門性や実際の利用経験があれば、説明役として説得力を持つこともあります。<strong>「有名だから」ではなく、「この広告課題を解くうえで必要な力を持っているから」起用する。</strong> ここまで理由を言葉にできると、人選にもぐっと説得力が生まれます。</p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>実際のご相談でも、『この商品の違いを伝えたい』という案件ほど、人選より先に伝え方を整理する必要があります。そこで一度立ち止まれるかどうかが、後の成果を分けます。</p></div></aside>
+<p>上の表で「ほかの手段を優先」に分類したのは、この研究を踏まえた<strong>記事上の実務整理</strong>です。すべての商材・人物・広告表現での優劣を保証するものではありません。ここは研究結果と実務の整理を、分けて読んでください。</p>
+<p>もちろん、タレント本人にその分野の専門性や実際の利用経験があれば、説明役として説得力を持つこともあります。<strong>「有名だから」ではなく、「この広告課題を解くうえで必要な力を持っているから」起用する。</strong> ここまで理由を言葉にできると、人選にもぐっと説得力が生まれます！</p>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>実際のご相談でも、「この商品の違いを伝えたい」という案件ほど、人選より先に伝え方を整理する必要があります。そこで一度立ち止まれるかどうかが、後の成果を分けます。</p></div></aside>
 </section>
 <aside aria-label="タレント起用の要否について相談" class="inline-cta">
 <div>
 <span class="mini-label">CASTING CONSULTATION</span>
 <div class="cta-heading">タレントを使うべきか？ その整理からご相談ください。</div>
-<p>認知を広げたいのか、商品の違いを伝えたいのか。広告課題によって、タレント起用が有効な場面は変わります。まだ起用するかどうか決めていない段階でも、課題の整理からご相談いただけます。</p>
+<p>「向いていないかもしれない」と感じた段階でも、構いません。課題に合った伝え方を一緒に整理するところから始められます。</p>
 </div>
-<a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">広告課題から相談する<span aria-hidden="true">↗</span></a>
+<a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">起用の要否から相談する<span aria-hidden="true">↗</span></a>
 </aside>
-<section aria-labelledby="title-before" class="chapter" id="before">
-<div class="chapter-label"><span>02</span>BEFORE CASTING</div>
-<h2 id="title-before">タレントを選ぶ前に決める4つのこと</h2>
+<section aria-labelledby="title-choose" class="chapter" id="choose">
+<div class="chapter-label"><span>03</span>FIND THE RIGHT PERSON</div>
+<h2 id="title-choose">人を選ぶ前に決めること、選ぶときに見ること</h2>
 <figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
-<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 03</span><strong>人選前の整理</strong></div>
-<img alt="企画書を囲んで広告の目的を整理するイメージ" decoding="async" height="941" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/before-choose-4points.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/before-choose-4points-820.webp" srcset="/images/before-choose-4points-480.webp 480w, /images/before-choose-4points-820.webp 820w, /images/before-choose-4points-1240.webp 1240w" width="1672"/>
+<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 04</span><strong>タレントの選び方</strong></div>
+<img alt="タレント候補や企画について相談するイメージ" decoding="async" height="941" loading="lazy" onerror="this.hidden=true" onload="this.parentElement.classList.add('is-loaded')" src="/images/how-to-choose-talent.png" width="1672"/>
 </div></figure>
-<p>タレントを起用すると決めたら、候補者を探す前に次の4点を整理しておきましょう。ここが明確になっていると、「この人が好きだから」だけではなく、広告の目的に沿って候補者を選びやすくなります。</p>
+<p>人選は、候補者を探すことから始まりません。先に決めておくことが4つあります。ここが埋まっていると、「この人が好きだから」ではなく、広告の目的に沿って選べるようになります。</p>
 <ul class="check-list">
 <li><strong>広告課題：</strong>認知、イメージ、理解、信頼、比較、行動のうち、何を変えたいのか</li>
 <li><strong>ターゲット：</strong>誰に届けたいのか、その人が何を判断材料にするのか</li>
@@ -587,32 +657,27 @@ figure.has-image .production-caption{display:none}
 <li><strong>活用範囲：</strong>テレビCM、Web広告、SNS、イベント、店頭など、どこまで展開するのか</li>
 </ul>
 <p>整理した結果、専門家の説明や第三者による評価のほうが課題に合っているなら、タレントを起用しないことも十分に合理的な判断です。私たちが目指したいのは、タレントを起用すること自体ではなく、<strong>広告の目的を達成すること</strong>です。</p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>この4点は、企画書に書かれているようで書かれていないことが多い項目です。埋まらないまま候補者を探し始めると、選定の軸が「有名かどうか」に戻ってしまいます。</p></div></aside>
-</section>
-<section aria-labelledby="title-choose" class="chapter" id="choose">
-<div class="chapter-label"><span>03</span>FIND THE RIGHT PERSON</div>
-<h2 id="title-choose">広告に起用するタレントの選び方</h2>
-<figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
-<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 04</span><strong>タレントの選び方</strong></div>
-<img alt="タレント候補や企画について相談するイメージ" decoding="async" height="941" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/how-to-choose-talent.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/how-to-choose-talent-820.webp" srcset="/images/how-to-choose-talent-480.webp 480w, /images/how-to-choose-talent-820.webp 820w, /images/how-to-choose-talent-1240.webp 1240w" width="1672"/>
-</div></figure>
+<h3>候補は、並べて比べる</h3>
+<p>4つが決まったら、候補を探します。ここで効くのが、キャスティング会社のネットワークです。</p>
+<p>私たちの場合は、全国<strong>1,200社超</strong>の芸能事務所ネットワークと<strong>6万人超</strong>のタレントデータベースがあります。<strong>1つの役に対して、複数の事務所を横断して候補を並べられる。</strong> 1社ずつ当たるのではなく、同じ土俵で比べられることが、キャスティング会社に依頼するいちばんの意味です。</p>
+<p>そして、候補が並んだところからが本番です！ ここから先は知名度ではなく、次の5つの観点で絞り込んでいきます。</p>
 <h3>ターゲットとの相性</h3>
 <p>まず確認したいのは、世の中全体での知名度だけではありません。大切なのは、「届けたいターゲットの中で、その候補者がどのくらい知られ、どのような理由で支持されているか」です。</p>
 <p>たとえば若年層向けの商品なら、全国的な知名度よりも、その世代からの支持やSNSでの反応のほうが重要な判断材料になることもあります。「有名な人」ではなく、<strong>「届けたい相手に届く人」</strong>という視点で選んでいきます。</p>
 <h3>広告課題との相性</h3>
 <p>ブランドのイメージに合う人物でも、その人が今回の広告課題を解決できるとは限りません。認知を広げたいなら注目度、ブランドの印象をつくりたいなら本人のイメージ、商品への理解を深めたいなら専門性や説明力というように、課題によって求める力は変わります。</p>
-<p>たとえば、商品の性能差を納得してもらうことが目的なら、人気俳優を起用するよりも、専門家による説明や実演のほうが効果的な場合があります。<strong>「ブランドのイメージに合うか」と「広告課題を解くために必要な力を持っているか」は、分けて考えることが大切です。</strong></p>
+<p>たとえば、商品の性能差を納得してもらうことが目的なら、人気俳優を起用するよりも、専門家による説明や実演のほうが効果的な場合があります。<strong>「ブランドのイメージに合うか」と「広告課題を解くために必要な力を持っているか」は、分けて考えます。</strong></p>
 <h3>ブランドとの相性</h3>
 <p>次に、タレントが持つイメージと、ブランドが伝えたい印象が合っているかを確認します。親しみを感じてほしいのか、憧れを持ってほしいのか。目指すブランドイメージが具体的になるほど、候補者も選びやすくなります。</p>
-<p class="fc-target" id="fact-2">過去の研究でも、人物と商品・ブランドの適合度によって、態度や行動意向への効果が変わることが示されています。知名度だけでなく、<strong>「この人がこの商品を紹介することに違和感がないか」「ブランドらしさにつながるか」</strong>まで確認してみましょう。<button aria-label="出典・補足1を開く" class="fc-mark" data-comment="1">1</button></p>
+<p class="fc-target" id="fact-2">過去の研究でも、人物と商品・ブランドの適合度によって、態度や行動意向への効果が変わることが示されています。知名度だけでなく、<strong>「この人がこの商品を紹介することに違和感がないか」「ブランドらしさにつながるか」</strong>まで確認します。<button aria-label="出典・補足1を開く" class="fc-mark" data-comment="1">1</button></p>
 <p>ただし、ブランドとの相性がよいだけで成果が決まるわけではありません。その人物がブランドに合っているかに加えて、今回の広告課題を解く役割を担えるかまで確認します。そのうえで、候補者ごとに「どの役割を担ってもらうか」を一文で書き出しておくと、選定の理由がぶれません。</p>
 <h3>広告で担う役割との相性</h3>
-<p>単に「広告に出てもらう」だけでなく、広告の中でどんな役割を担ってもらうのかまで考えてみましょう。タレントの魅力と役割がきちんと結び付くと、その人を起用する理由も伝わりやすくなります。</p>
+<p>単に「広告に出てもらう」のではなく、広告の中でどんな役割を担ってもらうのかまで決めます。役割が決まると、その人を起用する理由も伝わりやすくなります。</p>
 <p>注目を集めてもらうなら認知度や話題性、商品を説明してもらうなら専門性や説明力、SNSで発信してもらうなら普段の投稿内容やファンとの関係性が判断材料になります。知名度だけを理由に、すべての役割を期待しないことです。起用前に「担ってもらう役割」を絞っておくと、クリエイティブの設計もぶれません。</p>
 <h3>契約・実行のしやすさ</h3>
-<p>企画にぴったりの人物でも、競合契約やスケジュール、使用したい媒体・期間によっては起用できない場合があります。候補者を絞る段階から、実務条件も一緒に確認しておきましょう。</p>
+<p>企画にぴったりの人物でも、競合契約やスケジュール、使用したい媒体・期間によっては起用できない場合があります。候補者を絞る段階から、実務条件も一緒に確認しておきます。</p>
 <p>最終的には、<strong>「なぜこの人を起用するのか」を一文で説明できるか</strong>が一つの目安です。社内の関係者にも納得してもらえる起用理由まで言葉にできれば、説得力のある人選になります。</p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>候補者は、知名度より「その役割を担えるか」で絞るほうが、結果として社内の合意形成も早くなります。</p></div></aside>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>企画書に書いた人物像と、実際に会う人の間には、必ずズレがあります。そのズレが埋まる瞬間が、キャスティングのいちばん面白いところです。候補者は、知名度より「その役割を担えるか」で絞るほうが、結果として社内の合意形成も早くなります。</p></div></aside>
 </section>
 <aside aria-label="タレント起用の相談" class="inline-cta">
 <div>
@@ -620,21 +685,59 @@ figure.has-image .production-caption{display:none}
 <div class="cta-heading">「誰が合う？」の段階から、一緒に考えます。</div>
 <p>候補者がまだ決まっていない段階でもご相談いただけます。広告課題やターゲットを整理しながら、どのような「人の力」が必要なのかを考え、候補者選びにつなげます。</p>
 </div>
-<a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">タレント起用について相談する<span aria-hidden="true">↗</span></a>
+<a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">候補者選びから相談する<span aria-hidden="true">↗</span></a>
+</aside>
+<section aria-labelledby="title-process" class="chapter" id="process">
+<div class="chapter-label"><span>04</span>HOW IT RUNS</div>
+<h2 id="title-process">相談から撮影まで、どう進むのか</h2>
+<figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
+<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 05</span><strong>はじめの相談から</strong></div>
+<img alt="キャスティングについて担当者に相談するイメージ" decoding="async" height="941" loading="lazy" onerror="this.hidden=true" onload="this.parentElement.classList.add('is-loaded')" src="/images/who-to-ask.png" width="1672"/>
+</div></figure>
+<p>「何から始めればいいのか分からない」という段階でも、ご相談いただけます。実際の流れは、おおむね次のとおりです。各段階で決めておくことが、後の手戻りを減らします。</p>
+<div aria-label="比較表" class="table-scroll" role="region" tabindex="0"><table class="article-table">
+<thead><tr><th scope="col">段階</th><th scope="col">何をするか</th><th scope="col">ここで決めておくこと</th></tr></thead>
+<tbody>
+<tr><td data-label="段階">1. 相談</td><td data-label="何をするか">広告課題・ターゲット・予算感を共有する</td><td data-label="ここで決めておくこと">何を変えたいのか</td></tr>
+<tr><td data-label="段階">2. 候補提案</td><td data-label="何をするか">複数の事務所を横断して候補を並べる</td><td data-label="ここで決めておくこと">どの役割を担ってもらうか</td></tr>
+<tr><td data-label="段階">3. 絞り込み</td><td data-label="何をするか">相性・スケジュール・競合契約を確認する</td><td data-label="ここで決めておくこと">「なぜこの人か」を一文で言えるか</td></tr>
+<tr><td data-label="段階">4. 条件交渉</td><td data-label="何をするか">事務所と出演料・使用条件を詰める</td><td data-label="ここで決めておくこと">媒体・期間・地域の範囲</td></tr>
+<tr><td data-label="段階">5. オーディション</td><td data-label="何をするか">必要に応じて実施する</td><td data-label="ここで決めておくこと">演技・話し方・雰囲気の確認</td></tr>
+<tr><td data-label="段階">6. 契約</td><td data-label="何をするか">使用媒体・期間・競合・二次利用を確定する</td><td data-label="ここで決めておくこと">後から追加する可能性のある範囲</td></tr>
+<tr><td data-label="段階">7. 撮影</td><td data-label="何をするか">制作と並行して進行する</td><td data-label="ここで決めておくこと">素材の切り出し方</td></tr>
+<tr><td data-label="段階">8. 展開・測定</td><td data-label="何をするか">媒体ごとに出し分け、結果を確認する</td><td data-label="ここで決めておくこと">KPIとの突き合わせ</td></tr>
+</tbody>
+</table></div>
+<p>ここで覚えておいていただきたいのは、<strong>相談の時点で候補者が決まっている必要はない</strong>ということです。むしろ、企画が固まる前のほうが選択肢は広がります。4つの整理（03）が済んでいれば、そこから候補を並べていくことができます。</p>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>8つの段階のうち、結果の大半は実は2と3で決まります。どの候補を並べるか、どの役割で絞るか。ここを一緒に考えられるかどうかが、キャスティング会社を選ぶ意味だと私たちは思っています！</p></div></aside>
+</section>
+<aside aria-label="進め方についての相談" class="inline-cta">
+<div>
+<span class="mini-label">CASTING CONSULTATION</span>
+<div class="cta-heading">段取りが固まっていなくても大丈夫です。</div>
+<p>「まず何を決めればいいのか」というところから、ご一緒に整理します。企画が固まる前のほうが、選べる幅は広がります。</p>
+</div>
+<a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">進め方を相談する<span aria-hidden="true">↗</span></a>
 </aside>
 <section aria-labelledby="title-cost" class="chapter" id="cost">
-<div class="chapter-label"><span>04</span>COST &amp; CONTRACT</div>
-<h2 id="title-cost">タレント起用の費用と契約で確認するポイント</h2>
+<div class="chapter-label"><span>05</span>COST &amp; CONTRACT</div>
+<h2 id="title-cost">費用と契約で確認するポイント</h2>
 <figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
-<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 05</span><strong>費用と契約</strong></div>
-<img alt="撮影や出演の条件を打ち合わせるイメージ" decoding="async" height="941" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/cost-and-contract.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/cost-and-contract-820.webp" srcset="/images/cost-and-contract-480.webp 480w, /images/cost-and-contract-820.webp 820w, /images/cost-and-contract-1240.webp 1240w" width="1672"/>
+<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 06</span><strong>費用と契約</strong></div>
+<img alt="撮影や出演の条件を打ち合わせるイメージ" decoding="async" height="941" loading="lazy" onerror="this.hidden=true" onload="this.parentElement.classList.add('is-loaded')" src="/images/cost-and-contract.png" width="1672"/>
 </div></figure>
-<h3>費用は出演料だけでは決まらない</h3>
-<p>タレント起用を検討するとき、費用は気になるポイントの一つです。ただし、金額は知名度だけで決まるものではありません。使用媒体、契約期間、地域、競合制限、撮影内容、SNS投稿の有無など、さまざまな条件によって変わります。</p>
-<p>「この人はいくらですか？」と金額だけを確認する前に、<strong>「どの媒体で、いつまで、どのように起用したいか」</strong>を整理しておくのがおすすめです。そのほうが、企画に合った条件で見積もりを相談しやすくなります。</p>
+<h3>費用を決めるのは、知名度だけではない</h3>
+<p>タレント起用を検討するとき、費用はやはり気になるポイントです。私たちも、よくご相談を受けます。ただし、金額は知名度だけで決まるものではありません。実際には、4つの軸の組み合わせで決まります。</p>
+<ul class="check-list">
+<li><strong>誰が出演するか：</strong>出演料。ここが知名度や実績に影響されます</li>
+<li><strong>どこで使うか：</strong>テレビCM、Web広告、SNS、店頭、交通広告など、使用媒体の範囲</li>
+<li><strong>いつまで使うか：</strong>契約期間。延長の可能性があるかどうか</li>
+<li><strong>どこまで使うか：</strong>二次利用、地域、競合条件などの権利の範囲</li>
+</ul>
+<p>つまり、<strong>同じタレントでも、条件によって金額は変わります。</strong> 「この人はいくらですか？」と金額だけを確認する前に、<strong>「どの媒体で、いつまで、どのように起用したいか」</strong>を整理しておくのがおすすめです。そのほうが、企画に合った条件で見積もりを相談しやすくなります。</p>
 <h3>契約前に利用範囲を具体化する</h3>
 <p class="fc-target" id="fact-3">広告出演契約では、使用媒体・使用期間・競合条件などをあらかじめ整理します。JMAA（日本モデルエージェンシー協会）のガイドラインでも、発注時にこうした条件を明確にする考え方が示されています。<button aria-label="出典・補足2を開く" class="fc-mark" data-comment="2">2</button></p>
-<div aria-label="比較表・横スクロール可能" class="table-scroll" role="region" tabindex="0"><table class="article-table">
+<div aria-label="比較表" class="table-scroll" role="region" tabindex="0"><table class="article-table">
 <thead><tr><th scope="col">確認項目</th><th scope="col">事前に決める内容</th><th scope="col">後から起こりやすい問題</th></tr></thead>
 <tbody>
 <tr><td data-label="確認項目">使用媒体</td><td data-label="事前に決める内容">テレビ、Web広告、SNS、店頭、交通広告など</td><td data-label="後から起こりやすい問題">契約外の媒体で素材を使えない</td></tr>
@@ -642,66 +745,58 @@ figure.has-image .production-caption{display:none}
 <tr><td data-label="確認項目">競合条件</td><td data-label="事前に決める内容">どの商品・サービスを競合とするか</td><td data-label="後から起こりやすい問題">条件が広すぎると費用や交渉難度が上がる</td></tr>
 <tr><td data-label="確認項目">二次利用</td><td data-label="事前に決める内容">撮影素材の切り出し、SNS投稿、Web動画など</td><td data-label="後から起こりやすい問題">撮影後に追加活用したくても使えない</td></tr>
 </tbody>
-</table></div><p class="scroll-hint">表は横にスクロールしてご覧いただけます。</p>
-<p>撮影後に「あの素材をSNSでも使いたい！」となることは珍しくありません。あとから追加利用が必要になって慌てないよう、使う可能性のある媒体は撮影前にできるだけ洗い出しておきましょう。ここは先回りしておきたいポイントです。</p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>条件が固まっていない段階でのご相談でも構いません。むしろ、媒体や期間を一緒に整理していく過程で、最適な起用の形が見えてくることが多くあります。</p></div></aside>
+</table></div>
+<p>撮影後に「あの素材をSNSでも使いたい！」となることは珍しくありません。あとから追加利用が必要になって慌てないよう、使う可能性のある媒体は撮影前にできるだけ洗い出しておきましょう。ここは先回りしておきたいポイントです！</p>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>条件が固まっていない段階でのご相談でも構いません。むしろ、媒体や期間を一緒に整理していく過程で、「この使い方なら、この人で行こう」という最適な形が見えてくることが多くあります！</p></div></aside>
 </section>
 <aside aria-label="タレント起用の費用と契約について相談" class="inline-cta">
 <div>
 <span class="mini-label">CASTING CONSULTATION</span>
 <div class="cta-heading">予算や使い方が固まっていなくても大丈夫です。</div>
-<p>起用費は、人物だけでなく、媒体・期間・競合条件・二次利用の範囲などによって変わります。「この企画なら、どの媒体まで使えるのか」「どのような条件になるのか」といった段階からご相談いただけます。</p>
+<p>起用費は、人物だけでなく、媒体・期間・競合条件・二次利用の範囲などによって変わります。「この企画なら、どの媒体まで使えるのか」といった段階からご相談いただけます。</p>
 </div>
 <a class="button button-blue" href="https://www.e-spirit.jp/information" rel="noopener" target="_blank">費用・契約条件を相談する<span aria-hidden="true">↗</span></a>
 </aside>
 <section aria-labelledby="title-design" class="chapter" id="design">
-<div class="chapter-label"><span>05</span>CREATIVE &amp; RESULTS</div>
-<h2 id="title-design">タレント起用を広告成果につなげる設計</h2>
+<div class="chapter-label"><span>06</span>CREATIVE &amp; RESULTS</div>
+<h2 id="title-design">タレントと商品を、一緒に記憶してもらう</h2>
 <figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
-<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 06</span><strong>広告成果につなげる設計</strong></div>
-<img alt="出演者と制作スタッフが撮影に取り組むイメージ" decoding="async" height="941" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/ad-design-flow.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/ad-design-flow-820.webp" srcset="/images/ad-design-flow-480.webp 480w, /images/ad-design-flow-820.webp 820w, /images/ad-design-flow-1240.webp 1240w" width="1672"/>
+<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 07</span><strong>広告成果につなげる設計</strong></div>
+<img alt="企画書を囲んで広告の目的を整理するイメージ" decoding="async" height="941" loading="lazy" onerror="this.hidden=true" onload="this.parentElement.classList.add('is-loaded')" src="/images/before-choose-4points.png" width="1672"/>
 </div></figure>
-<h3>タレントと商品を同時に記憶してもらう</h3>
-<p class="fc-target" id="fact-7">「出演していた人は覚えている。でも、何の広告だったか思い出せない」。タレント広告では、こうした状態は避けたいところです。Erfgenら（2015）は<strong>計4,970人</strong>を対象とした複数の実験で、著名人に注意が集まることでブランド想起が弱まる「Vampire Effect」を検討しています。<button aria-label="出典・補足6を開く" class="fc-mark" data-comment="6">6</button></p>
+<h3>人が記憶に残って、商品が残らない</h3>
+<p class="fc-target" id="fact-7">01で触れた「人と商品がセットで記憶に残る」は、放っておいて起きるものではありません。Erfgenら（2015）の研究では、著名人に注意が集まることでブランド想起が弱まる「Vampire Effect」が検討されています。<button aria-label="出典・補足6を開く" class="fc-mark" data-comment="6">6</button></p>
 <p>同研究では、人物とブランドの相性や、両者の結び付きの強さが、この問題を抑える手掛かりとして示されています。大切なのは、<strong>「この人だからこそ、この商品の価値を伝えられる」</strong>という関係をつくることです。</p>
-<p>タレントの印象だけで終わらず、商品名やブランド名、伝えたいメッセージまで一緒に思い出してもらえる。そんな広告を目指したいところです。</p>
+<p>タレントの印象だけで終わらず、商品名やブランド名、伝えたいメッセージまで一緒に思い出してもらえる。そんな広告を、一緒に目指したいところです！</p>
 <h3>広告を見た後の導線まで設計する</h3>
-<p>広告を見て「気になる！」と思ってもらえたら、その先の導線も大切です。詳しい情報を確認できる場所や、問い合わせ・購入など次の行動につながる受け皿まで用意しておきましょう。</p>
+<p>広告を見て「気になる！」と思ってもらえたら、その先の導線も大切です。詳しい情報を確認できる場所や、問い合わせ・購入など次の行動につながる受け皿まで用意しておきます。</p>
 <p>たとえば、CMからWebサイトへ、SNSから特設ページへ、イベントから店舗やECへ。それぞれの接点が自然につながるように設計します。</p>
 <p>同じ素材をすべての媒体で使い回すのではなく、それぞれの媒体が「認知」「理解」「比較」「行動」のどこを担うのかを決めておくと、タレントの見せ方や役割も設計しやすくなります。</p>
 <h3>KPIは起用前に決める</h3>
-<p>広告を公開してから「何をもって成功とするか」を考えると、目についた数字だけで判断しがちです。KPI（成果を確認する指標）は、起用前に決めておきましょう。</p>
+<p>広告を公開してから「何をもって成功とするか」を考えると、目についた数字だけで判断しがちです。KPI（成果を確認する指標）は、起用前に決めておきます。</p>
 <p>認知拡大なら広告認知や指名検索、Web送客ならサイト流入、販売促進なら問い合わせや購入というように、目的と指標を対応させます。</p>
 <p>確認したいのは、「話題になったか」だけではありません。<strong>「最初に決めた広告目的を、どこまで達成できたか」</strong>まで振り返り、次の施策につなげていきます。</p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>タレントの印象が強い広告ほど、商品名まで記憶に残っているかを一度確認していただきたいと思います。ここが抜けると、認知は取れても次の行動につながりません。</p></div></aside>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>タレントの印象が強い広告ほど、商品名まで記憶に残っているかを一度確認していただきたいと思います。ここが抜けると、認知は取れても次の行動にはつながりません。ここは本当に大事なところです。</p></div></aside>
 </section>
 <section aria-labelledby="title-who" class="chapter" id="who">
-<div class="chapter-label"><span>06</span>YOUR CASTING PARTNER</div>
-<h2 id="title-who">タレント起用は誰に依頼するべきか</h2>
-<figure class="article-figure"><div class="media-slot photo-media" style="--ratio:16/9">
-<div aria-hidden="true" class="media-fallback"><span class="photo-kicker">PHOTO 07</span><strong>依頼先の選び方</strong></div>
-<img alt="キャスティングについて担当者に相談するイメージ" decoding="async" height="941" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='/images/who-to-ask.png';" onload="this.parentElement.classList.add('is-loaded')" sizes="(max-width:600px) calc(100vw - 44px), (max-width:940px) calc(100vw - 64px), 820px" src="/images/who-to-ask-820.webp" srcset="/images/who-to-ask-480.webp 480w, /images/who-to-ask-820.webp 820w, /images/who-to-ask-1240.webp 1240w" width="1672"/>
-</div></figure>
+<div class="chapter-label"><span>07</span>YOUR CASTING PARTNER</div>
+<h2 id="title-who">誰に依頼するか、どこまで任せるか</h2>
 <p>ここまで整理できたら、次は「誰に相談するか」を考えます。起用したい人物がすでに決まっているのか、企画や候補者選びから相談したいのかによって、適した依頼先は変わります。</p>
-<div aria-label="比較表・横スクロール可能" class="table-scroll" role="region" tabindex="0"><table class="article-table">
+<div aria-label="比較表" class="table-scroll" role="region" tabindex="0"><table class="article-table">
 <thead><tr><th scope="col">依頼先</th><th scope="col">向いているケース</th><th scope="col">主な特徴</th></tr></thead>
 <tbody>
 <tr><td data-label="依頼先">芸能事務所へ直接</td><td data-label="向いているケース">起用したい人物が決まっている</td><td data-label="主な特徴">候補者の比較や他事務所との調整は自社で行う必要がある</td></tr>
 <tr><td data-label="依頼先">キャスティング会社</td><td data-label="向いているケース">複数候補を比較し、交渉・契約・撮影進行まで任せたい</td><td data-label="主な特徴">複数事務所を横断した候補提案や実務調整をまとめて依頼しやすい</td></tr>
 <tr><td data-label="依頼先">広告設計まで扱う会社</td><td data-label="向いているケース">人選だけでなく、企画・制作・SNS・広告活用まで考えたい</td><td data-label="主な特徴">タレント起用を広告施策全体の中で設計しやすい</td></tr>
 </tbody>
-</table></div><p class="scroll-hint">表は横にスクロールしてご覧いただけます。</p>
+</table></div>
 <p>初めてタレントを起用する場合や、複数の事務所に所属する候補者を比較したい場合は、人選だけでなく<strong>契約・権利・スケジュールまで相談できるか</strong>も確認しておきましょう。どこまで任せたいのかをあらかじめ伝えておくと、相談もスムーズに進みます。</p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>「どこまで任せるか」を先に決めておくと、相談の往復が減ります。人選だけか、契約や撮影進行までか。ここは最初にすり合わせておきたいところです。</p></div></aside>
-</section>
-<section aria-labelledby="title-espirit" class="chapter" id="espirit">
-<div class="chapter-label"><span>07</span>ABOUT e-Spirit</div>
-<h2 id="title-espirit">イー・スピリットのタレント起用支援</h2>
+<h3>イー・スピリットに相談すると</h3>
 <p class="fc-target" id="fact-4">私たちイー・スピリットは、キャスティングを単なる「人の手配」ではなく、<strong>広告戦略の一部</strong>として考えています。商品やサービスへの理解を深め、広告課題と届けたいターゲットを整理したうえで、「どんな人の力が必要か」を一緒に考えていくのが私たちのスタイルです。<button aria-label="出典・補足3を開く" class="fc-mark" data-comment="3">3</button></p>
 <p class="fc-target" id="fact-5">候補者の選定には、広告契約状況や出演情報、SNSデータ、社内独自情報などを蓄積した「e-Spirit Now」を活用しています。全国<strong>1,200社超</strong>の芸能事務所ネットワークと<strong>6万人超</strong>のタレントデータベース、<strong>年間2,000件</strong>の案件実績をもとに、候補者の比較・提案からオーディション、交渉・契約まで幅広く対応しています。<button aria-label="出典・補足4を開く" class="fc-mark" data-comment="4">4</button></p>
 <p>「誰が合うか分からない」「企画もまだ固まっていない」という段階でもご相談いただけます。まずは広告で実現したいことをお聞かせください。<strong>広告の目的と、タレントが持つ魅力が重なるポイント</strong>を、私たちと一緒に探していきましょう！</p>
 <p><a class="text-link" href="https://www.e-spirit.jp/service" rel="noopener" target="_blank">イー・スピリットのサービスを見る <span aria-hidden="true">↗</span></a></p>
-<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.removeAttribute('srcset');this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>私たちは、企画が固まる前の段階から関わることを大切にしています。タレントの力を活かせる形は、企画の立て方そのものの中にあるからです。</p></div></aside>
+<aside class="voice"><img alt="" class="voice-avatar" decoding="async" height="240" loading="lazy" onerror="this.onerror=null;this.src='https://www.sbiartauction.co.jp/cr/NEWS/20250806/_KKA5503.jpg';" src="/images/supervisor-adachi-240.webp" width="240"/><div class="voice-body"><div class="voice-name">足立 茂樹<span>株式会社イー・スピリット 代表取締役</span></div><p>私たちは、企画が固まる前の段階から関わることを大切にしています。タレントの力を活かせる形は、企画の立て方そのものの中にあるからです。</p></div></aside>
 </section>
 <!-- --><script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Service","name":"タレント・モデルのキャスティング","serviceType":"広告キャスティング","description":"広告課題と届けたいターゲットを整理したうえで、全国1,200社超の芸能事務所ネットワークと6万人超のタレントデータベースから候補者を選定し、オーディション、交渉・契約まで対応します。","provider":{"@type":"Organization","name":"株式会社イー・スピリット","url":"https://www.e-spirit.jp/","telephone":"03-5464-3737"},"areaServed":{"@type":"Country","name":"日本"},"url":"https://www.e-spirit.jp/service"}
@@ -709,29 +804,30 @@ figure.has-image .production-caption{display:none}
 <section aria-labelledby="title-summary" class="chapter" id="summary">
 <div class="chapter-label"><span>08</span>TAKEAWAY</div>
 <h2 id="title-summary">タレント起用は「人選」ではなく広告設計から始める</h2>
-<p>タレント起用は、知名度の高い人を選べば終わり、という施策ではありません。まず広告課題を整理し、その解決にタレントの力が役立つのかを考えることが大切です。認知やブランドイメージの形成にはタレントが力を発揮しやすい一方、商品の違いを伝えることや客観的な信頼を得ることが目的なら、情報や根拠、専門家の説明を優先したほうがよい場合もあります。</p>
+<p>タレント起用は、知名度の高い人を選べば終わり、という施策ではありません。まず広告課題を整理し、その解決にタレントの力が役立つのかを考える。認知やブランドイメージの形成にはタレントが力を発揮しやすい一方、商品の違いを伝えることや客観的な信頼を得ることが目的なら、情報や根拠、専門家の説明を優先したほうがよい場合もあります。</p>
 <p>タレントの力を活かせると判断したら、ターゲットと役割を定め、人選、契約、活用方法、成果指標まで一貫して設計していきます。<strong>「誰を起用するか」の前に、「なぜその人の力が必要なのか」。</strong> そこが明確になると、キャスティングはもっと面白く、広告としてももっと強くなります！</p>
+<p>数字を整えることは、出発点にすぎません。その先にあるのは、<strong>「この広告には、この人しかいない」</strong>という確信です。私たちがキャスティングで目指しているのは、そこです！</p>
 </section>
 <section aria-labelledby="faq-title" class="faq">
 <h2 id="faq-title">よくある質問</h2>
-<details class="faq-item"><summary>タレント起用は、どんな広告課題に向いていますか？</summary>
-<div class="faq-a">商品やブランドの認知が低い、ブランドの印象を作りたい・変えたい、新しい顧客層へ広げたい、広告以外にも話題を広げたい——こうした課題では、タレントが持つ注目度やイメージ、ファンとのつながりを活かしやすいとしています。一方、商品の違いを理解してもらうことや、客観的な根拠で信頼を得ることが目的の場合は、比較・実演・第三者評価などの手段を優先したほうがよい場合があります。詳しくは「タレント起用が向いているケース・向いていないケース」をご覧ください。</div>
+<details class="faq-item"><summary>タレント起用で、広告にどんな変化が起きますか？</summary>
+<div class="faq-a">広告に起きることは、大きく4つあります。同じ枠でも視線が止まり「見る理由」ができること。商品名ではなく出演した人の名前で検索されること。切り取られた映像がSNSやPRなど広告の枠を越えて広がること。そして、人と商品がセットで記憶に残ることです。ただし4つ目は放っておいて起きるものではなく、人と商品の結び付きを設計したときに初めて起きます。詳しくは「タレント起用で、広告に何が起きるのか」をご覧ください。</div>
 </details>
 <details class="faq-item"><summary>有名なタレントを起用すれば、広告効果は高まりますか？</summary>
-<div class="faq-a">著名人起用に関する46件の研究（計10,357人）をまとめた分析では、タレントを起用したからといって広告効果が一律に高まるわけではないことが示されています。効果は商品・ブランドとの相性や広告の目的、ほかの伝え方との組み合わせによって変わります。また、商品への関与が高い条件では、誰が出演しているかよりもメッセージの論拠の強さが態度形成に影響したという実験もあります。詳しくは「タレント起用が向いているケース・向いていないケース」をご覧ください。</div>
+<div class="faq-a">著名人起用に関する46件の研究（計10,357人）をまとめた分析では、タレントを起用したからといって広告効果が一律に高まるわけではないことが示されています。効果は商品・ブランドとの相性や広告の目的、ほかの伝え方との組み合わせによって変わります。また、商品への関与が高い条件では、誰が出演しているかよりもメッセージの論拠の強さが態度形成に影響したという実験もあります。詳しくは「効果が立ち上がる広告、別の手段が勝つ広告」をご覧ください。</div>
+</details>
+<details class="faq-item"><summary>相談から撮影まで、どのように進みますか？</summary>
+<div class="faq-a">おおむね、①相談（広告課題・ターゲット・予算感の共有）②候補提案（複数事務所を横断して候補を並べる）③絞り込み（相性・スケジュール・競合契約の確認）④条件交渉⑤オーディション⑥契約⑦撮影⑧展開・測定という流れです。結果の大半は②候補提案と③絞り込みで決まります。なお、相談の時点で候補者が決まっている必要はなく、企画が固まる前のほうが選択肢は広がります。詳しくは「相談から撮影まで、どう進むのか」をご覧ください。</div>
 </details>
 <details class="faq-item"><summary>タレント起用の費用は、何によって決まりますか？</summary>
-<div class="faq-a">金額は知名度だけで決まるものではありません。使用媒体、契約期間、地域、競合制限、撮影内容、SNS投稿の有無など、さまざまな条件によって変わります。そのため、金額だけを確認する前に「どの媒体で、いつまで、どのように起用したいか」を整理しておくと、企画に合った条件で見積もりを相談しやすくなります。詳しくは「タレント起用の費用と契約で確認するポイント」をご覧ください。</div>
-</details>
-<details class="faq-item"><summary>タレント起用の契約前に、何を確認しておくべきですか？</summary>
-<div class="faq-a">使用媒体・使用期間・競合条件・二次利用の範囲をあらかじめ整理しておくことが大切です。これらが曖昧なままだと、契約外の媒体で素材を使えなかったり、キャンペーン延長時に再交渉が必要になったりします。撮影後に素材をSNSで使いたくなることは珍しくないため、使う可能性のある媒体は撮影前に洗い出しておきましょう。詳しくは「タレント起用の費用と契約で確認するポイント」をご覧ください。</div>
+<div class="faq-a">金額は知名度だけで決まるものではありません。①誰が出演するか（出演料）②どこで使うか（使用媒体）③いつまで使うか（契約期間）④どこまで使うか（二次利用・地域・競合条件）という4つの軸の組み合わせで決まります。同じタレントでも条件によって金額は変わります。金額だけを確認する前に「どの媒体で、いつまで、どのように起用したいか」を整理しておくと、企画に合った条件で見積もりを相談しやすくなります。詳しくは「費用と契約で確認するポイント」をご覧ください。</div>
 </details>
 <details class="faq-item"><summary>起用したいタレントが決まっていない段階でも相談できますか？</summary>
-<div class="faq-a">ご相談いただけます。候補者がまだ決まっていない段階でも、広告課題やターゲットを整理しながら、どのような「人の力」が必要なのかを一緒に考えるところから始められます。タレントを起用するかどうか自体を決めていない段階でも、課題の整理からご相談いただけます。詳しくは「イー・スピリットのタレント起用支援」をご覧ください。</div>
+<div class="faq-a">ご相談いただけます。候補者がまだ決まっていない段階でも、広告課題やターゲットを整理しながら、どのような「人の力」が必要なのかを一緒に考えるところから始められます。むしろ、企画が固まる前のほうが選択肢は広がります。タレントを起用するかどうか自体を決めていない段階でも、課題の整理からご相談いただけます。詳しくは「イー・スピリットに相談すると」をご覧ください。</div>
 </details>
 </section>
 <!-- --><script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"タレント起用は、どんな広告課題に向いていますか？","acceptedAnswer":{"@type":"Answer","text":"商品やブランドの認知が低い、ブランドの印象を作りたい・変えたい、新しい顧客層へ広げたい、広告以外にも話題を広げたい——こうした課題では、タレントが持つ注目度やイメージ、ファンとのつながりを活かしやすいとしています。一方、商品の違いを理解してもらうことや、客観的な根拠で信頼を得ることが目的の場合は、比較・実演・第三者評価などの手段を優先したほうがよい場合があります。詳しくは「タレント起用が向いているケース・向いていないケース」をご覧ください。"}},{"@type":"Question","name":"有名なタレントを起用すれば、広告効果は高まりますか？","acceptedAnswer":{"@type":"Answer","text":"著名人起用に関する46件の研究（計10,357人）をまとめた分析では、タレントを起用したからといって広告効果が一律に高まるわけではないことが示されています。効果は商品・ブランドとの相性や広告の目的、ほかの伝え方との組み合わせによって変わります。また、商品への関与が高い条件では、誰が出演しているかよりもメッセージの論拠の強さが態度形成に影響したという実験もあります。詳しくは「タレント起用が向いているケース・向いていないケース」をご覧ください。"}},{"@type":"Question","name":"タレント起用の費用は、何によって決まりますか？","acceptedAnswer":{"@type":"Answer","text":"金額は知名度だけで決まるものではありません。使用媒体、契約期間、地域、競合制限、撮影内容、SNS投稿の有無など、さまざまな条件によって変わります。そのため、金額だけを確認する前に「どの媒体で、いつまで、どのように起用したいか」を整理しておくと、企画に合った条件で見積もりを相談しやすくなります。詳しくは「タレント起用の費用と契約で確認するポイント」をご覧ください。"}},{"@type":"Question","name":"タレント起用の契約前に、何を確認しておくべきですか？","acceptedAnswer":{"@type":"Answer","text":"使用媒体・使用期間・競合条件・二次利用の範囲をあらかじめ整理しておくことが大切です。これらが曖昧なままだと、契約外の媒体で素材を使えなかったり、キャンペーン延長時に再交渉が必要になったりします。撮影後に素材をSNSで使いたくなることは珍しくないため、使う可能性のある媒体は撮影前に洗い出しておきましょう。詳しくは「タレント起用の費用と契約で確認するポイント」をご覧ください。"}},{"@type":"Question","name":"起用したいタレントが決まっていない段階でも相談できますか？","acceptedAnswer":{"@type":"Answer","text":"ご相談いただけます。候補者がまだ決まっていない段階でも、広告課題やターゲットを整理しながら、どのような「人の力」が必要なのかを一緒に考えるところから始められます。タレントを起用するかどうか自体を決めていない段階でも、課題の整理からご相談いただけます。詳しくは「イー・スピリットのタレント起用支援」をご覧ください。"}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"タレント起用で、広告にどんな変化が起きますか？","acceptedAnswer":{"@type":"Answer","text":"広告に起きることは、大きく4つあります。同じ枠でも視線が止まり「見る理由」ができること。商品名ではなく出演した人の名前で検索されること。切り取られた映像がSNSやPRなど広告の枠を越えて広がること。そして、人と商品がセットで記憶に残ることです。ただし4つ目は放っておいて起きるものではなく、人と商品の結び付きを設計したときに初めて起きます。詳しくは「タレント起用で、広告に何が起きるのか」をご覧ください。"}},{"@type":"Question","name":"有名なタレントを起用すれば、広告効果は高まりますか？","acceptedAnswer":{"@type":"Answer","text":"著名人起用に関する46件の研究（計10,357人）をまとめた分析では、タレントを起用したからといって広告効果が一律に高まるわけではないことが示されています。効果は商品・ブランドとの相性や広告の目的、ほかの伝え方との組み合わせによって変わります。また、商品への関与が高い条件では、誰が出演しているかよりもメッセージの論拠の強さが態度形成に影響したという実験もあります。詳しくは「効果が立ち上がる広告、別の手段が勝つ広告」をご覧ください。"}},{"@type":"Question","name":"相談から撮影まで、どのように進みますか？","acceptedAnswer":{"@type":"Answer","text":"おおむね、①相談（広告課題・ターゲット・予算感の共有）②候補提案（複数事務所を横断して候補を並べる）③絞り込み（相性・スケジュール・競合契約の確認）④条件交渉⑤オーディション⑥契約⑦撮影⑧展開・測定という流れです。結果の大半は②候補提案と③絞り込みで決まります。なお、相談の時点で候補者が決まっている必要はなく、企画が固まる前のほうが選択肢は広がります。詳しくは「相談から撮影まで、どう進むのか」をご覧ください。"}},{"@type":"Question","name":"タレント起用の費用は、何によって決まりますか？","acceptedAnswer":{"@type":"Answer","text":"金額は知名度だけで決まるものではありません。①誰が出演するか（出演料）②どこで使うか（使用媒体）③いつまで使うか（契約期間）④どこまで使うか（二次利用・地域・競合条件）という4つの軸の組み合わせで決まります。同じタレントでも条件によって金額は変わります。金額だけを確認する前に「どの媒体で、いつまで、どのように起用したいか」を整理しておくと、企画に合った条件で見積もりを相談しやすくなります。詳しくは「費用と契約で確認するポイント」をご覧ください。"}},{"@type":"Question","name":"起用したいタレントが決まっていない段階でも相談できますか？","acceptedAnswer":{"@type":"Answer","text":"ご相談いただけます。候補者がまだ決まっていない段階でも、広告課題やターゲットを整理しながら、どのような「人の力」が必要なのかを一緒に考えるところから始められます。むしろ、企画が固まる前のほうが選択肢は広がります。タレントを起用するかどうか自体を決めていない段階でも、課題の整理からご相談いただけます。詳しくは「イー・スピリットに相談すると」をご覧ください。"}}]}
 </script>
 <section aria-labelledby="cta-title" class="closing-cta">
 <span class="mini-label">CONTACT</span>
@@ -759,15 +855,7 @@ figure.has-image .production-caption{display:none}
 </main>
 <aside aria-label="記事内ナビゲーション" class="sidebar">
 <div class="sidebar-heading">IN THIS ARTICLE</div>
-<ol class="side-toc"><li><a data-toc-link="" href="#fit"><span>01</span>タレント起用が向いているケース・向いていないケース</a></li>
-<li><a data-toc-link="" href="#before"><span>02</span>タレントを選ぶ前に決める4つのこと</a></li>
-<li><a data-toc-link="" href="#choose"><span>03</span>広告に起用するタレントの選び方</a></li>
-<li><a data-toc-link="" href="#cost"><span>04</span>タレント起用の費用と契約で確認するポイント</a></li>
-<li><a data-toc-link="" href="#design"><span>05</span>タレント起用を広告成果につなげる設計</a></li>
-<li><a data-toc-link="" href="#who"><span>06</span>タレント起用は誰に依頼するべきか</a></li>
-<li><a data-toc-link="" href="#espirit"><span>07</span>イー・スピリットのタレント起用支援</a></li>
-<li><a data-toc-link="" href="#summary"><span>08</span>タレント起用は「人選」ではなく広告設計から始める</a></li>
-<li><a data-toc-link="" href="#faq-title"><span>09</span>よくある質問</a></li></ol>
+<ol class="side-toc"><li><a data-toc-link="" href="#effect"><span>01</span>タレント起用で、広告に何が起きるのか</a></li><li><a data-toc-link="" href="#fit"><span>02</span>効果が立ち上がる広告、別の手段が勝つ広告</a></li><li><a data-toc-link="" href="#choose"><span>03</span>人を選ぶ前に決めること、選ぶときに見ること</a></li><li><a data-toc-link="" href="#process"><span>04</span>相談から撮影まで、どう進むのか</a></li><li><a data-toc-link="" href="#cost"><span>05</span>費用と契約で確認するポイント</a></li><li><a data-toc-link="" href="#design"><span>06</span>タレントと商品を、一緒に記憶してもらう</a></li><li><a data-toc-link="" href="#who"><span>07</span>誰に依頼するか、どこまで任せるか</a></li><li><a data-toc-link="" href="#summary"><span>08</span>タレント起用は「人選」ではなく広告設計から始める</a></li><li><a data-toc-link="" href="#faq-title"><span>09</span>よくある質問</a></li></ol>
 </aside>
 </div>
 </div>
@@ -791,7 +879,7 @@ figure.has-image .production-caption{display:none}
 <div class="comment-label">01 / 著名人起用のメタ分析</div>
 <p>Knoll &amp; Matthes（2017）は、2016年4月までの46研究・計10,357人を統合。全体平均はd＝0.04（95%信頼区間 −0.09〜0.17）で有意ではありませんでしたが、結果には条件間のばらつきがありました。</p>
 <p>商品・ブランドへの態度では、推薦のない広告との比較でd＝0.24、品質認証・受賞との比較でd＝−0.44。「効果が常にゼロ」「どの広告でも認証が勝つ」と一般化する数値ではありません。</p>
-<p>本文の「情報・証拠を優先する場面」は、研究を踏まえた記事上の実務整理です。すべての商材・人物・広告表現での優劣を保証するものではありません。</p>
+<p>本文の02で「ほかの手段を優先したほうがよい広告」に分類したのは、研究を踏まえた記事上の実務整理です。すべての商材・人物・広告表現での優劣を保証するものではありません。</p>
 <a href="https://link.springer.com/article/10.1007/s11747-016-0503-8" rel="noopener" target="_blank">原典：Journal of the Academy of Marketing Science ↗</a>
 </article>
 <article class="comment" id="comment-2">
@@ -929,16 +1017,5 @@ figure.has-image .production-caption{display:none}
   });
 })();
 </script>
-<script>
-document.addEventListener('error', function(e){
-  const img=e.target;
-  if(!(img instanceof HTMLImageElement)) return;
-}, true);
-document.addEventListener('load', function(e){
-  const img=e.target;
-  if(!(img instanceof HTMLImageElement)) return;
-  img.parentElement?.classList.add('is-loaded');
-  img.closest('figure')?.classList.add('has-image');
-}, true);
-</script></body>
+</body>
 </html>
